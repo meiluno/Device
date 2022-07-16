@@ -607,16 +607,23 @@ img {
     margin-left: 35px;
 }
 
+.delivery-partners {
+    position: relative;
+}
+
 .delivery-partners::before {
     position: absolute;
     content: "";
 }
 
 .delivery-partners::before {
+    top: 50%;
+    left: 50%;
     width: 8px;
     height: 8px;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
+    transform: translateY(-50%);
 }
 
 .map {
@@ -625,3 +632,128 @@ img {
     margin-bottom: 60px;
 }
 /*Main*/
+
+/*Footer*/
+/*Footer wrapper top*/
+footer {
+    height: 323px;
+    background-color: #464646;
+}
+
+.footer-wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+}
+
+.footer-logo {
+    font-family: "Gilroy";
+    font-size: 48px;
+    color: #ffc600;
+    transform: translateY(-30%);
+}
+
+.footel-user-menu-list {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footel-user-menu-list,
+.footer-address,
+.footer-telephone {
+    font-family: "Open sans";
+    font-size: 15px;
+    color: rgb(200, 200, 200);
+}
+
+.footer-login::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(/content/svg/user-footer.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    transform: translateX(-20px);
+}
+
+.footer-compare::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(/content/svg/compare-footer.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    transform: translateX(-20px);
+}
+
+.footer-cart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(/content/svg/cart-footer.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    transform: translateX(-20px);
+}
+/*Footer wrapper top*/
+
+/*Footer wrapper centre*/
+.footer-wrapper-centre {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer-services-list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    font-family: "Gilroy";
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: white;
+}
+/*Footer wrapper centre*/
+
+/*Footer wrapper botton*/
+.footer-wrapper-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.footer-decoration-line {
+    position: relative;
+    width: 60px;
+}
+
+.footer-decoration-line::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 7px;
+    background-color: #ffc600;
+    top: 15px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.social-button {
+    width: 32px;
+    height: 32px;
+    opacity: .3;
+}
+/*Footer wrapper botton*/
+/*Footer*/
